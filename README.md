@@ -1,7 +1,24 @@
 Pull Request Clickbait Notifier
 ===============================
 
-Generates clickbait messages in order to notify people on Slack about pull requests.
+Generates clickbait pull request notifications and posts them on Slack.
+
+### Example
+
+```
+export SLACK_API_TOKEN=xxxx-xxxxxxxxxx-xxxxxxxxxx-xxxxxxxxxxx-xxxxxxxxxx
+ruby main.rb notify -c "#channel" -u "https://github.com/my-username/my-project/pulls/17" -p "My Project" -l "Ruby"
+```
+
+Will post a message like the following to the Slack channel #channel:
+> This pull request will prove that you have been writing Ruby wrong your whole life: https://github.com/my-username/my-project/pulls/17
+
+or
+
+> This pull request will change the way you think about My Project: https://github.com/my-username/my-project/pulls/17"
+
+
+### Usage
 
 ```
 Usage:
