@@ -29,6 +29,7 @@ Options:
   -u, [--url=URL]            # Specify the pull request URL
   -p, [--project=PROJECT]    # Specify the project name (used to generate message)
   -l, [--language=LANGUAGE]  # Specify the language/framework name (used to generate message)
+  -e, [--emoji=EMOJI]        # Specify an emoji to be used to generate the message
 
 Notify a Slack channel about a pull request with a randomly-generated clickbait message.
 ```
