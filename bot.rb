@@ -12,10 +12,11 @@ class Bot
   end
 
   def notify(url, project_name, language_name, emoji)
+    message = ClickbaitGenerator.get(url, project_name, language_name, emoji)
     @slack_client.chat_postMessage(
       channel: @channel,
-      text: ClickbaitGenerator.get(url, project_name, language_name, emoji),
-      as_user: true
+      text: message
     )
+    message
   end
 end
