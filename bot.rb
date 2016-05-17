@@ -15,7 +15,8 @@ class Bot
     message = ClickbaitGenerator.get(url, project_name, language_name, emoji)
     @slack_client.chat_postMessage(
       channel: @channel,
-      text: message
+      text: message,
+      as_user: true
     )
     message
   end
