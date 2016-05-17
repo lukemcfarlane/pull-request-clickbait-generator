@@ -18,6 +18,7 @@ GEM
     minitest (5.8.4)
     multipart-post (2.0.0)
     rack (1.6.4)
+    rack-cors (0.4.0)
     slack-ruby-client (0.7.2)
       activesupport
       faraday
@@ -39,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   rack
+  rack-cors
   slack-ruby-client
   thor
 
